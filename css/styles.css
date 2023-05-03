@@ -395,7 +395,7 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-  gap: 16px;
+  
 }
 .logo-wrapper {
   margin-right: 120px;
@@ -680,13 +680,13 @@ img {
   width: 100%;
   height: 120px;
   padding: 8px 16px;
-  font-size: 12px;
+ font-size: 14px;
 line-height: 1.17;
-
+display: block;
 letter-spacing: 0.04em;
+color: var(--dark);
 
 
-color: rgba(46, 47, 66, 0.4);
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 background-color: transparent;
@@ -694,6 +694,10 @@ outline: transparent;
 resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.modal-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
 }
 .modal-comment:focus {
   border-color: var(--pressed-state);
@@ -836,5 +840,4 @@ border-color: var(--pressed-state);
 }
 .list-cards-link:hover .card-descr,
 .list-cards-link:focus .card-descr {
-  transform: translateY(0%);
-}
+  transform: translateY(0);}
